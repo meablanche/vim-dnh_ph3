@@ -4,10 +4,9 @@
 " Latest Revision: 13 June 2016
 
 " first setup some constants
-let b:current_syntax = "dnh_ph3"
 
 " if current syntax has already been defined, then end script
-if exists(b:current_syntax)
+if exists('b:current_syntax')
   finish
 endif
 
@@ -176,6 +175,8 @@ syntax region dnh_block_param start='(' end=')' fold transparent
 " ----------------------------------------------
 " Highlighting {{{1
 " ----------------------------------------------
+let b:current_syntax = "dnh_ph3"
+
 " headers
 hi! def link dnh_header               PreProc
 
